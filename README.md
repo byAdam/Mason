@@ -23,7 +23,7 @@ Cut down trees with a single swing!
 ### Recipe:
 ![Chainsaw Recipe](media/recipes/chainsaw.png)
 ### Demonstration:
-![Chainsaw Demonstation](https://thumbs.gfycat.com/DisfiguredElasticCockatoo.webp)
+<img src="https://thumbs.gfycat.com/DisfiguredElasticCockatoo.webp" width="480" height="270" />
 
 ***
 
@@ -33,7 +33,7 @@ Swap around the positions of almost any 2 blocks (Including Chests, Furnaces etc
 ### Recipe:
 ![Displacer Recipe](media/recipes/displacer.png)
 ### Demonstration:
-![Displacer Demonstation](https://thumbs.gfycat.com/SpiritedMealyElver.webp)
+<img src="https://thumbs.gfycat.com/SpiritedMealyElver.webp" width="480" height="270" />
 
 ***
 
@@ -43,7 +43,7 @@ Right click a block to rotate it!
 ### Recipe:
 ![Wrench Recipe](media/recipes/wrench.png)
 ### Demonstration:
-![Wrench Demonstation](https://thumbs.gfycat.com/CaringFrailEgg-small.gif)
+<img src="https://thumbs.gfycat.com/CaringFrailEgg-small.gif" width="480" height="270" />
 
 ***
 
@@ -53,7 +53,7 @@ Destroy a 3\*3\*3 square of the same block with one hit! (Only works on blocks y
 ### Recipe:
 ![Hammer Recipe](media/recipes/hammer.png)
 ### Demonstration:
-![Hammer Demonstation](https://thumbs.gfycat.com/UniformHatefulAfricanaugurbuzzard.webp)
+<img src="https://thumbs.gfycat.com/UniformHatefulAfricanaugurbuzzard.webp" width="480" height="270" />
 
 ***
 
@@ -63,7 +63,7 @@ Attract any nearby items to your player!
 ### Recipe:
 ![Magnet Recipe](media/recipes/magnet.png)
 ### Demonstration:
-![Magnet Demonstation](https://thumbs.gfycat.com/MagnificentMiserableBassethound.webp)
+<img src="https://thumbs.gfycat.com/MagnificentMiserableBassethound.webp" width="480" height="270" />
 
 ***
 
@@ -73,7 +73,7 @@ Plough a 3\*3\*3 area!
 ### Recipe:
 ![Plougj Recipe](media/recipes/plough.png)
 ### Demonstration:
-![Plough Demonstation](https://thumbs.gfycat.com/CourageousCreativeHalibut.webp)
+<img src="https://thumbs.gfycat.com/CourageousCreativeHalibut.webp" width="480" height="270" />
 
 ***
 
@@ -83,7 +83,7 @@ Fill any area between two blocks as long as you have the resources!
 ### Recipe:
 ![Screwdriver Recipe](media/recipes/screwdriver.png)
 ### Demonstration:
-![Screwdriver Demonstation](https://thumbs.gfycat.com/AdorableFrankAmphibian-small.gif)
+<img src="https://thumbs.gfycat.com/AdorableFrankAmphibian-small.gif" width="480" height="270" />
 
 ***
 
@@ -93,4 +93,4 @@ Hold a cloud block to place a cloud 3 blocks in front of you! Useful for buildin
 ### Recipe:
 ![Cloud Recipe](media/recipes/cloud.png)
 ### Demonstration:
-![Cloud Demonstation](https://thumbs.gfycat.com/PointedSomberBalloonfish-small.gif)
+<img src="https://thumbs.gfycat.com/PointedSomberBalloonfish-small.gif" width="480" height="270" />
