@@ -1,7 +1,7 @@
 # Mason
 ![Logo](media/misc/logo.png)
 
-Mason is a Minecraft Addon for Bedrock 1.12 that adds many useful survival orientated tools! 
+#### Mason is a Minecraft Addon for Bedrock 1.12 that adds many useful survival orientated tools! 
 
 **Note**: This addon is currently in beta, as it Bedrock 1.12 so it will be prone to bugs
 
@@ -10,7 +10,7 @@ Mason is a Minecraft Addon for Bedrock 1.12 that adds many useful survival orien
 # Materials
 ## Diaron Ingot
 ### Description:
-Diaron is a Iron-Diamond alloy used to craft all the custom items in this mod
+Diaron is a Iron-Diamond alloy used to craft all the custom items in this addon
 ### Recipe:
 ![Diaron Recipe](media/recipes/diaron_ingot.png)
 
