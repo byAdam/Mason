@@ -1,0 +1,30 @@
+var system = server.registerSystem(0,0);
+var eventName = "mason:"
+var primaryClient = false
+
+system.initialize = function() {	
+	this.listenForEvent("mason:playerJoin", (event) => this.playerJoin(event));
+	this.listenForEvent("mason:requestTool", (event) => this.broadcastTool(event));
+	this.listenForEvent(eventName, (event) => this.itemUse(event));
+};
+
+system.broadcastTool = function(event) {
+	event = this.createEventData("mason:registerTool")
+	event.data = {}
+	event.data.player = primaryClient
+	event.data.item = "mason:"
+	event.data.eventName = eventName
+	event.data.returns = []
+
+	this.broadcastEvent("mason:registerTool",event)
+}
+
+system.playerJoin = function(event) {
+	if(!primaryClient)
+	{
+		primaryClient = event.data.player
+	}
+}
+
+system.itemUse = function(event) {
+}

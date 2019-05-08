@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mason:wrench",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "wrench",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

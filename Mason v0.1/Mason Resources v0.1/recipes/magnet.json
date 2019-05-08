@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mason:magnet"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "X X",
+      " X "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "mason:diaron_ingot"
+      }
+    },
+    "result": {
+      "item": "mason:magnet"
+    }
+  }
+}

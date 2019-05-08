@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mason:screwdriver"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " X ",
+      " # ",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "mason:diaron_ingot"
+      }
+    },
+    "result": {
+      "item": "mason:screwdriver"
+    }
+  }
+}

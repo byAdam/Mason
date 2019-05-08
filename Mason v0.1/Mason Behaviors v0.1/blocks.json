@@ -1,0 +1,11 @@
+{
+  "format_version": [
+    1,
+    1,
+    0
+  ],
+  "mason:cloud": {
+    "textures": "cloud",
+    "sound": "cloth"
+  }
+}

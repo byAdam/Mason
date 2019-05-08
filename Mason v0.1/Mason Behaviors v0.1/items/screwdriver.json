@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mason:screwdriver",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "screwdriver",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

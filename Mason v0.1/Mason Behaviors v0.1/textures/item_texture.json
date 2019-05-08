@@ -1,0 +1,42 @@
+{
+  "resource_pack_name": "Mason Resources",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "screwdriver":
+    {
+      "textures":"textures/items/screwdriver.png"
+    },    
+    "wrench":
+    {
+      "textures":"textures/items/wrench.png"
+    },
+    "hammer":
+    {
+      "textures":"textures/items/hammer.png"
+    },
+    "chainsaw":
+    {
+      "textures":"textures/items/chainsaw.png"
+    },
+    "diaron_ingot":
+    {
+      "textures":"textures/items/diaron_ingot.png"
+    },
+    "magnet":
+    {
+      "textures":"textures/items/magnet.png"
+    },
+    "plough":
+    {
+      "textures":"textures/items/plough.png"
+    },
+    "displacer":
+    {
+      "textures":"textures/items/displacer.png"
+    },
+    "cloud_item":
+    {
+      "textures":"textures/items/cloud_item.png"
+    }
+  }
+}

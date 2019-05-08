@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mason:cloud"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XXX",
+      "X X",
+      "XXX"
+    ],
+    "key": {
+      "X": {
+        "item": "mason:diaron_ingot"
+      }
+    },
+    "result": {
+      "item": "mason:cloud",
+      "count": 32
+    }
+  }
+}
