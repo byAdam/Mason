@@ -5,18 +5,17 @@
 
 **Note**: This addon is currently in beta, as it Bedrock 1.12 so it will be prone to bugs
 
-## Download: V0.1
+## Download: [V0.1](https://github.com/byAdam/Mason/releases/tag/v0.1)
 
-# Materials
+---
+
+# Wiki:
 ## Diaron Ingot
 ### Description:
 Diaron is a Iron-Diamond alloy used to craft all the custom items in this addon
 ### Recipe:
 ![Diaron Recipe](media/recipes/diaron_ingot.png)
 
----
-
-# Tools
 ## Chainsaw
 ### Description:
 Cut down trees with a single swing!
