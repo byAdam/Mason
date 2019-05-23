@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+   "components": {
+    "minecraft:loot":{"table":"loot_tables/blocks/conveyor_belt.json"},
+    "minecraft:destroy_time":{"value":0.5},
+    "minecraft:map_color":{"color":"#536382"}
+    },
+     "description": {
+      "identifier": "mason:conveyor_belt_south"
+    }
+  }
+}

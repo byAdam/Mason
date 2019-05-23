@@ -48,8 +48,8 @@ system.itemUse = function(event) {
 	playerName = event.data.playerName
 
 	whitelist = {}
-	whitelist.direction6 = ["minecraft:piston","minecraft:sticky_piston","minecraft:observer","minecraft:dropper","minecraft:dispenser"]
-	whitelist.direction4 = ["minecraft:barrel","minecraft:carved_pumpkin","minecraft:lit_pumpkin"]
+	whitelist.direction6 = ["minecraft:piston","minecraft:sticky_piston","minecraft:observer"]
+	whitelist.direction4 = ["minecraft:carved_pumpkin","minecraft:lit_pumpkin"]
 	whitelist.rails = ["minecraft:golden_rail","minecraft:detector_rail","minecraft:rail","minecraft:activator_rail"]
 	whitelist.stairs = ["minecraft:stone_stairs","minecraft:nether_brick_stairs","minecraft:brick_stairs","minecraft:oak_stairs","minecraft:purpur_stairs","minecraft:red_nether_brick_stairs","minecraft:sandstone_stairs","minecraft:spruce_stairs","minecraft:birch_stairs","minecraft:jungle_stairs","minecraft:acacia_stairs","minecraft:dark_oak_stairs","minecraft:red_sandstone_stairs","minecraft:prismarine_stairs","minecraft:dark_prismarine_stairs","minecraft:prismarine_bricks_stairs","minecraft:granite_stairs","minecraft:diorite_stairs","minecraft:andesite_stairs","minecraft:polished_granite_stairs","minecraft:polished_diorite_stairs","minecraft:polished_andesite_stairs","minecraft:mossy_stone_brick_stairs","minecraft:smooth_red_sandstone_stairs","minecraft:smooth_sandstone_stairs","minecraft:end_brick_stairs","minecraft:mossy_cobblestone_stairs","minecraft:normal_stone_stairs"]
 	whitelist.logs = ["minecraft:log","minecraft:log2"]

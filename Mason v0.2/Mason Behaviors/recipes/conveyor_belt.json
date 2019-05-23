@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mason:conveyor_belt"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XXX",
+      " # ",
+      "XXX"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:redstone_block"
+      },
+      "X": {
+        "item": "mason:diaron_ingot"
+      }
+    },
+    "result": {
+      "item": "mason:conveyor_belt",
+      "count": 16
+    }
+  }
+}

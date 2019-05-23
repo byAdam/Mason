@@ -1,0 +1,82 @@
+{
+	"Mason Behaviors/loot_tables/blocks/diamond_quarry.json": {
+		"content": {
+			"open": true,
+			"comment": "",
+			"data": "",
+			"key": "global",
+			"type": "object",
+			"children": [
+				{
+					"open": true,
+					"comment": "",
+					"data": "",
+					"key": "pools",
+					"type": "array",
+					"children": [
+						{
+							"open": true,
+							"comment": "",
+							"data": "",
+							"key": "0",
+							"type": "object",
+							"children": [
+								{
+									"open": true,
+									"comment": "",
+									"data": "1",
+									"key": "rolls",
+									"type": "number",
+									"children": []
+								},
+								{
+									"open": true,
+									"comment": "",
+									"data": "",
+									"key": "entries",
+									"type": "array",
+									"children": [
+										{
+											"open": true,
+											"comment": "",
+											"data": "",
+											"key": "0",
+											"type": "object",
+											"children": [
+												{
+													"open": false,
+													"comment": "",
+													"data": "item",
+													"key": "type",
+													"type": "string",
+													"children": []
+												},
+												{
+													"open": true,
+													"comment": "",
+													"data": "mason:conveyor_belt",
+													"key": "name",
+													"type": "string",
+													"children": []
+												},
+												{
+													"open": true,
+													"comment": "",
+													"data": "1",
+													"key": "weight",
+													"type": "number",
+													"children": []
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"format_version": 1
+	}
+}

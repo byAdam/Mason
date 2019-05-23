@@ -7,3 +7,9 @@ item.mason:diaron_ingot.name=Diaron Ingot
 item.mason:magnet.name=Magnet
 item.mason:plough.name=Plough
 item.mason:displacer.name=Displacer
+
+tile.mason:conveyor_belt.name=Conveyor Belt
+tile.mason:conveyor_belt_north.name=Conveyor Belt
+tile.mason:conveyor_belt_south.name=Conveyor Belt
+tile.mason:conveyor_belt_east.name=Conveyor Belt
+tile.mason:conveyor_belt_west.name=Conveyor Belt

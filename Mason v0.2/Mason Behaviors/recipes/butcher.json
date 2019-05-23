@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mason:butcher"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XXX",
+      " # ",
+      "XXX"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:diamond_sword"
+      },
+      "X": {
+        "item": "mason:diaron_ingot"
+      }
+    },
+    "result": {
+      "item": "mason:butcher"
+    }
+  }
+}

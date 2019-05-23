@@ -7,6 +7,38 @@
   "texture_data": {
     "cloud": {
       "textures": "textures/blocks/cloud.png"
+    },
+    "conveyor_belt_north":
+    {
+      "textures": "textures/blocks/conveyor_belt_north.png"
+    },
+    "conveyor_belt_south":
+    {
+      "textures": "textures/blocks/conveyor_belt_south.png"
+    },
+    "conveyor_belt_east":
+    {
+      "textures": "textures/blocks/conveyor_belt_east.png"
+    },
+    "conveyor_belt_west":
+    {
+      "textures": "textures/blocks/conveyor_belt_west.png"
+    },    
+    "conveyor_belt_side":
+    {
+      "textures": "textures/blocks/conveyor_belt_side.png"
+    },
+    "conveyor_belt_bottom":
+    {
+      "textures": "textures/blocks/conveyor_belt_bottom.png"
+    },
+    "conveyor_belt_blank":
+    {
+      "textures": "textures/blocks/conveyor_belt_blank.png"
+    },
+    "butcher":
+    {
+      "textures": "textures/blocks/butcher.png"
     }
   }
 }

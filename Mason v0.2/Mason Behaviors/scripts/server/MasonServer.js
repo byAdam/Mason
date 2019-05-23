@@ -15,7 +15,12 @@ system.initialize = function() {
 	this.listenForEvent("minecraft:entity_carried_item_changed", (event) => this.holdChange(event));
 
 	this.listenForEvent("mason:registerTool", (event) => this.registerTool(event));
+
 };
+
+system.update = function(){
+	this.runCommand("/function mason")
+}
 
 system.playerJoin = function(event) {
 	if(!primaryClient)
@@ -24,6 +29,7 @@ system.playerJoin = function(event) {
 		requestEvent = this.createEventData("mason:registerTool")
 		requestEvent.data = {player:primaryClient}
 		this.broadcastEvent("mason:requestTool",requestEvent);
+		this.runCommand("gamerule sendCommandFeedback false")
 	}
 }
 
@@ -40,6 +46,13 @@ system.registerTool = function(event) {
 	{
 		this.registerEventData(tool.eventName,{})
 	}
+}
+
+system.runCommand = function(command)
+{
+	eventData = this.createEventData("minecraft:execute_command")
+	eventData.data.command = command
+	this.broadcastEvent("minecraft:execute_command",eventData)
 }
 
 system.getTickingArea = function(player) {
