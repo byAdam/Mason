@@ -9,31 +9,34 @@
     "sound": "cloth"
   },
     "mason:conveyor_belt_north": {
-    "textures": {"up":"conveyor_belt_north","side":"conveyor_belt_side","down":"conveyor_belt_bottom"},
+    "textures": {"up":"conveyor_belt_north","side":"conveyor_belt_side","down":"dark_diaron"},
     "sound": "metal"
   },
       "mason:conveyor_belt_south": {
-    "textures": {"up":"conveyor_belt_south","side":"conveyor_belt_side","down":"conveyor_belt_bottom"},
+    "textures": {"up":"conveyor_belt_south","side":"conveyor_belt_side","down":"dark_diaron"},
     "sound": "metal"
   },
       "mason:conveyor_belt_east": {
-    "textures": {"up":"conveyor_belt_east","side":"conveyor_belt_side","down":"conveyor_belt_bottom"},
+    "textures": {"up":"conveyor_belt_east","side":"conveyor_belt_side","down":"dark_diaron"},
     "sound": "metal"
   },
       "mason:conveyor_belt_west": {
-    "textures": {"up":"conveyor_belt_west","side":"conveyor_belt_side","down":"conveyor_belt_bottom"},
+    "textures": {"up":"conveyor_belt_west","side":"conveyor_belt_side","down":"dark_diaron"},
     "sound": "metal"
   },
   "mason:conveyor_belt_up": {
-    "textures": {"up":"conveyor_belt_bottom","side":"conveyor_belt_north","down":"conveyor_belt_bottom"},
+    "textures": {"up":"dark_diaron","side":"conveyor_belt_north","down":"dark_diaron"},
     "sound": "metal"
   },
    "mason:conveyor_belt": {
-    "textures": {"up":"conveyor_belt_blank","side":"conveyor_belt_side","down":"conveyor_belt_bottom"},
+    "textures": {"up":"conveyor_belt_blank","side":"conveyor_belt_side","down":"dark_diaron"},
     "sound": "metal"
   },
      "mason:butcher": {
-    "textures": {"up":"conveyor_belt_bottom","side":"butcher","down":"conveyor_belt_bottom"},
+    "textures": {"up":"dark_diaron","side":"butcher","down":"dark_diaron"},
+    "sound": "metal"
+  },     "mason:elevator": {
+    "textures": {"up":"elevator","side":"dark_diaron","down":"dark_diaron"},
     "sound": "metal"
   }
 }

@@ -2,7 +2,7 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "mason:butcher"
+    "identifier": "mason:elevator"
     },
 
     
@@ -12,15 +12,16 @@
       "#"
     ],
     "key": {
-      "#": {
-        "item": "minecraft:diamond_sword"
-      },
       "X": {
         "item": "mason:diaron_ingot"
+      },
+            "#": {
+        "item": "minecraft:slime"
       }
     },
     "result": {
-      "item": "mason:butcher"
+      "item": "mason:elevator",
+      "count": 1
     }
   }
 }

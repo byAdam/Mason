@@ -37,6 +37,10 @@
     "cloud_item":
     {
       "textures":"textures/items/cloud_item.png"
+    },
+    "phaser":
+    {
+      "textures":"textures/items/phaser.png"
     }
   }
 }

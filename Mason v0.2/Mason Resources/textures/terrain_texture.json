@@ -10,35 +10,39 @@
     },
     "conveyor_belt_north":
     {
-      "textures": "textures/blocks/conveyor_belt_north.png"
+      "textures": "textures/blocks/conveyor/conveyor_belt_north.png"
     },
     "conveyor_belt_south":
     {
-      "textures": "textures/blocks/conveyor_belt_south.png"
+      "textures": "textures/blocks/conveyor/conveyor_belt_south.png"
     },
     "conveyor_belt_east":
     {
-      "textures": "textures/blocks/conveyor_belt_east.png"
+      "textures": "textures/blocks/conveyor/conveyor_belt_east.png"
     },
     "conveyor_belt_west":
     {
-      "textures": "textures/blocks/conveyor_belt_west.png"
+      "textures": "textures/blocks/conveyor/conveyor_belt_west.png"
     },    
     "conveyor_belt_side":
     {
-      "textures": "textures/blocks/conveyor_belt_side.png"
+      "textures": "textures/blocks/conveyor/conveyor_belt_side.png"
     },
-    "conveyor_belt_bottom":
+    "dark_diaron":
     {
-      "textures": "textures/blocks/conveyor_belt_bottom.png"
+      "textures": "textures/blocks/dark_diaron.png"
     },
     "conveyor_belt_blank":
     {
-      "textures": "textures/blocks/conveyor_belt_blank.png"
+      "textures": "textures/blocks/conveyor/conveyor_belt_blank.png"
     },
     "butcher":
     {
       "textures": "textures/blocks/butcher.png"
+    },
+        "elevator":
+    {
+      "textures": "textures/blocks/elevator.png"
     }
   }
 }

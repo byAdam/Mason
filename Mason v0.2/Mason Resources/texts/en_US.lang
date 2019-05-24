@@ -1,15 +1,18 @@
 item.mason:screwdriver.name=Screwdriver
 item.mason:wrench.name=Wrench
 item.mason:hammer.name=Hammer
-tile.mason:cloud.name=Cloud
 item.mason:chainsaw.name=Chainsaw
 item.mason:diaron_ingot.name=Diaron Ingot
 item.mason:magnet.name=Magnet
 item.mason:plough.name=Plough
 item.mason:displacer.name=Displacer
+item.mason:phaser.name=Phaser
 
+tile.mason:cloud.name=Cloud
 tile.mason:conveyor_belt.name=Conveyor Belt
 tile.mason:conveyor_belt_north.name=Conveyor Belt
 tile.mason:conveyor_belt_south.name=Conveyor Belt
 tile.mason:conveyor_belt_east.name=Conveyor Belt
 tile.mason:conveyor_belt_west.name=Conveyor Belt
+tile.mason:butcher.name=Butcher
+tile.mason:elevator.name=Elevator

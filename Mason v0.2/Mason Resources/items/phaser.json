@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mason:phaser",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "phaser",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}
