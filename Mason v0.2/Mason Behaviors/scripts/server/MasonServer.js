@@ -179,7 +179,7 @@ system.blockInteract = function(event,interactType) {
 			toolEvent.data.position = position
 			toolEvent.data.eventName = tool.eventName
 			toolEvent.data.item = tool.item
-
+			
 			// Loop through what the tool wants returned
 			for(r=0;r<tool.returns.length;r++)
 			{

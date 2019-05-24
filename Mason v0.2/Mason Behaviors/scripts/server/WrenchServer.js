@@ -40,58 +40,105 @@ system.runCommand = function(command)
 	this.broadcastEvent("minecraft:execute_command",eventData)
 }
 
+system.updateState = function(blockType,blockState,identifier)
+{
+	if(blockType=="stairs")
+	{
+		blockState.weirdo_direction += 1
+		if(blockState.weirdo_direction==4)
+		{
+			blockState.weirdo_direction = 0
+			blockState.upside_down_bit = !blockState.upside_down_bit
+		}
+	}
+	else if(blockType=="direction6")
+	{
+		blockState.facing_direction += 1
+		exceptions = ["minecraft:chest","minecraft:furnace","minecraft:lit_furnace","minecraft:trapped_chest"]
+		if(blockState.facing_direction==6)
+		{
+			if(exceptions.indexOf(identifier)>-1)
+			{
+				blockState.facing_direction = 2
+			}
+			else
+			{
+				blockState.facing_direction = 0
+			}
+			
+		}
+	}
+	else if(blockType=="direction4")
+	{
+		blockState.direction += 1
+		if(blockState.direction==4)
+		{
+			blockState.direction=0
+		}
+	}
+	else if(blockType=="rails")
+	{
+		blockState.rail_direction += 1
+		if(blockState.rail_direction==10)
+		{
+			blockState.rail_direction=0
+		}
+	}
+	else if(blockType=="trapdoors")
+	{
+		blockState.direction += 1
+		if(blockState.direction==4)
+		{
+			blockState.direction = 0
+			blockState.upside_down_bit = !blockState.upside_down_bit
+		}
+	}
+	else if(blockType=="doors")
+	{
+		blockState.direction += 1
+		if(blockState.direction==4)
+		{
+			blockState.direction = 0
+			blockState.door_hinge_bit = !blockState.door_hinge_bit
+		}
+
+	}
+
+	return blockState
+}
+
 system.itemUse = function(event) {
 
 	blockPosition = event.data.position
 	blockData = event.data.blockData
-	dataValue = event.data.dataValue
+	identifier = blockData.__identifier__
 	playerName = event.data.playerName
 
 	whitelist = {}
-	whitelist.direction6 = ["minecraft:piston","minecraft:sticky_piston","minecraft:observer"]
-	whitelist.direction4 = ["minecraft:carved_pumpkin","minecraft:lit_pumpkin"]
-	whitelist.rails = ["minecraft:golden_rail","minecraft:detector_rail","minecraft:rail","minecraft:activator_rail"]
+	whitelist.direction6 = ["minecraft:furnace","minecraft:lit_furnace","minecraft:trapped_chest","minecraft:chest","minecraft:piston","minecraft:sticky_piston","minecraft:observer","minecraft:dropper","minecraft:dispenser"]
 	whitelist.stairs = ["minecraft:stone_stairs","minecraft:nether_brick_stairs","minecraft:brick_stairs","minecraft:oak_stairs","minecraft:purpur_stairs","minecraft:red_nether_brick_stairs","minecraft:sandstone_stairs","minecraft:spruce_stairs","minecraft:birch_stairs","minecraft:jungle_stairs","minecraft:acacia_stairs","minecraft:dark_oak_stairs","minecraft:red_sandstone_stairs","minecraft:prismarine_stairs","minecraft:dark_prismarine_stairs","minecraft:prismarine_bricks_stairs","minecraft:granite_stairs","minecraft:diorite_stairs","minecraft:andesite_stairs","minecraft:polished_granite_stairs","minecraft:polished_diorite_stairs","minecraft:polished_andesite_stairs","minecraft:mossy_stone_brick_stairs","minecraft:smooth_red_sandstone_stairs","minecraft:smooth_sandstone_stairs","minecraft:end_brick_stairs","minecraft:mossy_cobblestone_stairs","minecraft:normal_stone_stairs"]
-	whitelist.logs = ["minecraft:log","minecraft:log2"]
-	whitelist.striped_logs = ["minecraft:stripped_spruce_log","minecraft:stripped_birch_log","minecraft:stripped_jungle_log","minecraft:stripped_acacia_log","minecraft:stripped_dark_oak_log","minecraft:stripped_oak_log"]
+	whitelist.direction4 = ["minecraft:carved_pumpkin","minecraft:lit_pumpkin","minecraft:log","minecraft:log2","minecraft:stripped_spruce_log","minecraft:stripped_birch_log","minecraft:stripped_jungle_log","minecraft:stripped_acacia_log","minecraft:stripped_dark_oak_log","minecraft:stripped_oak_log"]
+	whitelist.rails = ["minecraft:golden_rail","minecraft:detector_rail","minecraft:rail","minecraft:activator_rail"]
+	whitelist.trapdoors = ["minecraft:trapdoor","minecraft:acacia_trapdoor","minecraft:birch_trapdoor","minecraft:dark_oak_trapdoor","minecraft:iron_trapdoor","minecraft:jungle_trapdoor","minecraft:spruce_trapdoor"]
+	whitelist.doors = ["minecraft:wooden_door","minecraft:acacia_door","minecraft:birch_door","minecraft:dark_oak_door","minecraft:iron_door","minecraft:jungle_door","minecraft:spruce_door"]
 
-	types = Object.keys(whitelist)
-	for(w=0;w<types.length;w++)
+	whitelistKeys = Object.keys(whitelist)
+
+	blockStateComponent = this.getComponent(blockData, "minecraft:blockstate")
+	blockType = false
+	for(w=0;w<whitelistKeys.length;w++)
 	{
-		type = types[w]
-		identifiers = whitelist[type]
-		if(identifiers.indexOf(blockData.__identifier__)>-1)
+		currentType = whitelistKeys[w]
+		if(whitelist[currentType].indexOf(identifier)>-1)
 		{
-			switch(type)
-			{
-				case "direction6":
-					dataValue++
-					if(dataValue>=6){dataValue = 0}
-					break
-				case "direction4":
-					dataValue++
-					if(dataValue>=4){dataValue = 0}
-					break
-				case "rails":
-					dataValue++
-					if(dataValue>=10){dataValue = 0}
-					break
-				case "stairs":
-					dataValue++
-					if(dataValue>=8){dataValue = 0}
-					break
-				case "logs":
-					dataValue+=4
-					if(dataValue>=16){dataValue-=16}
-					break
-				case "striped_logs":
-					dataValue++
-					if(dataValue>=4){dataValue = 0}
-					break
-			}
-			this.setBlock(blockPosition,blockData,dataValue)
-			this.runCommand("/playsound note.snare "+playerName)
-			return
+			blockType = currentType
+			break
 		}
 	}
+	if(!blockType){return}
+
+	blockStateComponent.data = this.updateState(blockType,blockStateComponent.data,identifier)
+
+	this.applyComponentChanges(blockData,blockStateComponent)
+	this.runCommand("/playsound note.snare "+playerName)
 }
