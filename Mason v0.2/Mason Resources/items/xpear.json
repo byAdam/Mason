@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mason:xpear",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "xpear",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

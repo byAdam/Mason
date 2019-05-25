@@ -41,6 +41,14 @@
     "phaser":
     {
       "textures":"textures/items/phaser.png"
+    },
+    "xpear":
+    {
+      "textures":"textures/items/xpear.png"
+    },
+    "solidifier":
+    {
+      "textures":"textures/items/solidifier.png"
     }
   }
 }

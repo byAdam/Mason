@@ -1,5 +1,5 @@
 var system = server.registerSystem(0,0);
-var eventName = "mason:cloudUse"
+var eventName = "mason:xpearUse"
 var primaryClient = false
 
 system.initialize = function() {	
@@ -13,7 +13,7 @@ system.broadcastTool = function(event) {
 	event.data = {}
 	event.data.player = primaryClient
 	event.data.type = "use"
-	event.data.item = "mason:cloud_item"
+	event.data.item = "mason:xpear"
 	event.data.eventName = eventName
 	event.data.returns = ["playerName"]
 
@@ -34,18 +34,9 @@ system.runCommand = function(command)
 	this.broadcastEvent("minecraft:execute_command",eventData)
 }
 
-system.setBlockCallback = function(event,count)
-{
-	if(event.data.statusCode!=0)
-	{
-		this.runCommand("/replaceitem entity "+playerName+" slot.weapon.mainhand 0 cloud_item "+count)
-	}
-}
-
-system.itemUse = function(event) 
+system.itemUse = function(event)
 {
 	playerName = event.data.playerName
-	count = event.data.count
 
-	this.executeCommand("execute "+playerName+" ~ ~1.62001 ~ fill ^ ^ ^3 ^ ^ ^3 cloud 0 replace air",(e) => this.setBlockCallback(e,count))
+	this.runCommand("/xp 7 "+playerName)
 }

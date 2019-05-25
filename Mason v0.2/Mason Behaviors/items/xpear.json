@@ -2,12 +2,13 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "mason:cloud_item"
+      "identifier": "mason:xpear"
     },
 
     "components": {
     	"minecraft:use_duration": 1,
-    	      "minecraft:food": {
+      "minecraft:foil": true,
+    	"minecraft:food": {
         "nutrition": 0,
         "can_always_eat": true
       }

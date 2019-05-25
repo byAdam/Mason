@@ -2,12 +2,13 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "mason:cloud_item"
+      "identifier": "mason:solidifier"
     },
 
     "components": {
-    	"minecraft:use_duration": 1,
-    	      "minecraft:food": {
+    "minecraft:max_stack_size": 1,
+      "minecraft:use_duration": 1,
+    	"minecraft:food": {
         "nutrition": 0,
         "can_always_eat": true
       }

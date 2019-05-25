@@ -2,27 +2,29 @@
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
-    "identifier": "mason:diaron_ingot"
+    "identifier": "mason:solidifier"
     },
 
     
     "tags": [ "crafting_table" ],
     "pattern": [
-      "XXX",
-      "###",
-      "XXX"
+      "X X",
+      " a ",
+      "# #"
     ],
     "key": {
       "#": {
-        "item": "minecraft:diamond"
+        "item": "minecraft:stick"
       },
       "X": {
-        "item": "minecraft:iron_ingot"
+        "item": "mason:diaron_ingot"
+      },
+      "a": {
+        "item": "minecraft:apple"
       }
     },
     "result": {
-      "item": "mason:diaron_ingot",
-      "count": 3
+      "item": "mason:solidifier"
     }
   }
 }
