@@ -49,6 +49,10 @@
     "solidifier":
     {
       "textures":"textures/items/solidifier.png"
+    },
+    "enemy_scanner":
+    {
+      "textures":"textures/items/enemy_scanner.png"
     }
   }
 }
