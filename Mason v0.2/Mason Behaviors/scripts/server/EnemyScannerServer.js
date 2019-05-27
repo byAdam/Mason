@@ -10,7 +10,10 @@ system.initialize = function() {
 
 system.update = function()
 {
-	this.runCommand("/function enemy_scanner")
+	this.runCommand("execute @p[tag=MasonScanner] ~ ~ ~ function enemy_scanner")
+	this.runCommand("title @a[tag=MasonScannerHad,tag=!MasonScanner] actionbar")
+	this.runCommand("tag @a remove MasonScannerHad")
+	this.runCommand("tag @a[tag=MasonScanner] add MasonScannerHad")
 }
 
 system.runCommand = function(command)

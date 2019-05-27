@@ -40,8 +40,15 @@ execute @e[tag=MasonEnemy] ~ ~ ~ scoreboard players set @a[r=4] MasonScanner 5
 execute @e[tag=MasonEnemy] ~ ~ ~ scoreboard players set @a[r=2] MasonScanner 1
 execute @a ~ ~ ~ scoreboard players operation @s MasonScannerS -= @s MasonScanner
 execute @a[scores={MasonScannerS=1..}] ~ ~ ~ scoreboard players operation @s MasonScannerC = @s MasonScanner
+execute @a[scores={MasonScannerS=..-1}] ~ ~ ~ title @s actionbar
 execute @a[scores={MasonScannerS=..-1}] ~ ~ ~ scoreboard players operation @s MasonScannerC = @s MasonScanner
 
 scoreboard players remove @a[scores={MasonScannerC=1..}] MasonScannerC 1
-execute @a[scores={MasonScannerC=0,MasonScanner=1..},tag=MasonScanner] ~ ~ ~ playsound note.pling @s ~ ~ ~ 1 3.5
+execute @a[scores={MasonScannerC=3,MasonScanner=5..},tag=MasonScanner] ~ ~ ~ playsound note.pling @s ~ ~ ~ 1 3.5
+execute @a[scores={MasonScannerC=3,MasonScanner=5..},tag=MasonScanner] ~ ~ ~ title @s actionbar §6Beep
+execute @a[scores={MasonScannerC=0,MasonScanner=5..},tag=MasonScanner] ~ ~ ~ title @s actionbar
+
+execute @a[scores={MasonScanner=1},tag=MasonScanner] ~ ~ ~ playsound note.pling @s ~ ~ ~ 1 3.5
+execute @a[scores={MasonScanner=1},tag=MasonScanner] ~ ~ ~ title @s actionbar §6Beep
+
 execute @a[scores={MasonScannerC=0}] ~ ~ ~ scoreboard players operation @s MasonScannerC = @s MasonScanner
