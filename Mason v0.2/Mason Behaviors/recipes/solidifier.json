@@ -9,7 +9,7 @@
     "tags": [ "crafting_table" ],
     "pattern": [
       "X X",
-      " a ",
+      " # ",
       "# #"
     ],
     "key": {
@@ -18,9 +18,6 @@
       },
       "X": {
         "item": "mason:diaron_ingot"
-      },
-      "a": {
-        "item": "minecraft:apple"
       }
     },
     "result": {
