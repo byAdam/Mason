@@ -37,9 +37,6 @@ system.broadcastTool = function(event) {
 
 	event.data.block = "mason:conveyor_belt_up"
 	this.broadcastEvent("mason:registerTool",event)
-
-	event.data.block = "mason:conveyor_belt"
-	this.broadcastEvent("mason:registerTool",event)
 }
 
 system.playerJoin = function(event) {

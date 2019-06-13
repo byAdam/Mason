@@ -2,7 +2,7 @@
    "format_version" : 1,
    "header" : {
       "description" : "Mason Resources",
-      "name" : "Mason Resources for v0.1",
+      "name" : "Mason Resources for v0.2",
       "platform_locked" : false,
       "uuid" : "77a33e84-4979-4c74-9a59-efd5f09f20cc",
       "version" : [ 0, 0, 1 ]

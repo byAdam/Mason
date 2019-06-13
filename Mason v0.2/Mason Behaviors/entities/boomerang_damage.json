@@ -1,0 +1,32 @@
+{
+	"minecraft:entity": {
+		"format_version": "1.8.0",
+		"description": {
+			"identifier": "mason:boomerang_damage",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:projectile": {
+				"onHit": {
+					"impact_damage": {
+						"damage": [
+							5,
+							10
+						],
+						"destroyonhit": true
+					},
+					"remove_on_hit": {}
+				}
+			},
+			"minecraft:explode": {
+				"power": 0,
+				"fuseLit": true,
+				"fuseLength": 5
+			}
+		},
+		"events": {}
+	}
+}

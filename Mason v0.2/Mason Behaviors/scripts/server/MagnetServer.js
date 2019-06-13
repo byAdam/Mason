@@ -1,7 +1,6 @@
 var system = server.registerSystem(0,0);
 var eventName = "mason:magnetUse"
 var primaryClient = false
-var players = []
 
 system.initialize = function() {	
 	this.listenForEvent("mason:playerJoin", (event) => this.playerJoin(event));
@@ -13,23 +12,14 @@ system.initialize = function() {
 
 system.update = function()
 {
-	if(players.length>0)
-	{
-		for(p=0;p<players.length;p++)
-		{	
-			this.magnetCommand(players[p])
-		}
-	}
-
+	this.runCommand("execute @p[tag=MasonMagnet] ~ ~ ~ function magnet")
 }
 
-system.magnetCommand = function(playerName)
+system.runCommand = function(command)
 {
-	commandData = this.createEventData("minecraft:execute_command")
-	commandData.data.command = "execute @e[type=item] ~ ~ ~ tp @s ~ ~ ~ facing @p[r=32,name="+playerName+"]"
-	this.broadcastEvent("minecraft:execute_command",commandData)
-	commandData.data.command = "execute @e[type=item] ~ ~ ~ detect ^ ^ ^.1 air 0 tp @s ^ ^ ^.2 facing @p[r=32,name="+playerName+"]"
-	this.broadcastEvent("minecraft:execute_command",commandData)
+	eventData = this.createEventData("minecraft:execute_command")
+	eventData.data.command = command
+	this.broadcastEvent("minecraft:execute_command",eventData)
 }
 
 system.broadcastTool = function(event) {
@@ -59,22 +49,10 @@ system.itemUse = function(event) {
 
 	if(isHolding)
 	{
-		for(i=0;i<players.length;i++)
-		{
-			if(players[i][1] == playerName)
-			{
-				return
-			}
-		}
-		players.push(playerName)
+		this.runCommand("tag "+playerName+" add MasonMagnet")
 	}
-
 	else
 	{
-		index = players.indexOf(playerName)
-		if(index>-1)
-		{
-			players.splice(index, 1);
-		}
+		this.runCommand("tag "+playerName+" remove MasonMagnet")
 	}
 }

@@ -1,0 +1,31 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/conveyor/conveyor_belt_north",
+    "atlas_tile": "conveyor_belt_north",
+    "ticks_per_frame": 1,
+    "blend_frames": false
+  },
+    {
+    "flipbook_texture": "textures/blocks/conveyor/conveyor_belt_south",
+    "atlas_tile": "conveyor_belt_south",
+    "ticks_per_frame": 1,
+    "blend_frames": false
+  },
+    {
+    "flipbook_texture": "textures/blocks/conveyor/conveyor_belt_east",
+    "atlas_tile": "conveyor_belt_east",
+    "ticks_per_frame": 1,
+    "blend_frames": false
+  },
+    {
+    "flipbook_texture": "textures/blocks/conveyor/conveyor_belt_west",
+    "atlas_tile": "conveyor_belt_west",
+    "ticks_per_frame": 1,
+    "blend_frames": false
+  },
+      {
+    "flipbook_texture": "textures/blocks/elevator",
+    "atlas_tile": "elevator",
+    "ticks_per_frame": 15
+  }
+]

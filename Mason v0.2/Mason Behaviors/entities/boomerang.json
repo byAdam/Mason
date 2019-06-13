@@ -1,0 +1,60 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "mason:boomerang",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"mason:die": {
+				"minecraft:explode": {
+					"power": 0,
+					"fuseLit": true,
+					"fuseLength": 0
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"mason_portal_beam",
+					"blue_beam"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:damage_sensor": [
+				{
+					"deals_damage": false
+				}
+			],
+			"minecraft:environment_sensor": [
+				{
+					"on_environment": {
+						"event": "mason:die",
+						"filters": {
+							"test": "has_tag",
+							"value": "MasonDie"
+						}
+					}
+				}
+			],
+			"minecraft:loot": {
+				"table": "loot_tables/entity/boomerang.json"
+			}
+		},
+		"events": {
+			"mason:die": {
+				"add": {
+					"component_groups": [
+						"mason:die"
+					]
+				}
+			}
+		}
+	}
+}

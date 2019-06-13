@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "mason:boomerang"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " X",
+      "X X",
+    ],
+    "key": {
+      "X": {
+        "item": "mason:diaron_ingot"
+      }
+    },
+    "result": {
+      "item": "mason:boomerang"
+    }
+  }
+}

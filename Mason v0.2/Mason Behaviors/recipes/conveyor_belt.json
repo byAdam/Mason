@@ -19,8 +19,8 @@
       }
     },
     "result": {
-      "item": "mason:conveyor_belt",
-      "count": 16
+      "item": "mason:conveyor_belt_north",
+      "count": 8
     }
   }
 }

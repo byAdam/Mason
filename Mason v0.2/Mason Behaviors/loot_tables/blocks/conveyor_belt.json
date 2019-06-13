@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "mason:conveyor_belt",
+					"name": "mason:conveyor_belt_north",
 					"weight": 1
 				}
 			]

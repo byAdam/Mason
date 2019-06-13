@@ -30,7 +30,15 @@ tag @e[type=zombie_villager] add MasonEnemy
 scoreboard players add @a MasonScanner 0
 scoreboard players add @a MasonScannerC 0
 
+
+
 execute @a ~ ~ ~ scoreboard players operation @s MasonScannerS = @s MasonScanner
+
+
+tag @a remove MasonEnemyInRadius
+execute @e[tag=MasonEnemy] ~ ~ ~ tag @a[r=64] add MasonEnemyInRadius
+execute @a[tag=!MasonEnemyInRadius] ~ ~ ~ scoreboard players set @s MasonScanner -1
+
 execute @e[tag=MasonEnemy] ~ ~ ~ scoreboard players set @a[r=64] MasonScanner 40
 execute @e[tag=MasonEnemy] ~ ~ ~ scoreboard players set @a[r=48] MasonScanner 30
 execute @e[tag=MasonEnemy] ~ ~ ~ scoreboard players set @a[r=32] MasonScanner 20

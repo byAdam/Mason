@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "mason:boomerang",
+			"materials": {
+				"default": "boomerang"
+			},
+			"textures": {
+				"default": "textures/entity/boomerang"
+			},
+			"geometry": {
+				"default": "geometry.boomerang"
+			},
+			"render_controllers": [
+				"controller.render.boomerang"
+			],
+			"animations": {
+				"spin": "animation.boomerang.spin"
+			},
+			"animation_controllers": [
+				{
+					"spin": "controller.animation.boomerang.spin"
+				}
+			]
+		}
+	}
+}

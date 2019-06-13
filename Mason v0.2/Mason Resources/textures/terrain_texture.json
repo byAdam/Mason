@@ -32,9 +32,9 @@
     {
       "textures": "textures/blocks/dark_diaron.png"
     },
-    "conveyor_belt_blank":
+    "light_diaron":
     {
-      "textures": "textures/blocks/conveyor/conveyor_belt_blank.png"
+      "textures": "textures/blocks/light_diaron.png"
     },
     "butcher":
     {

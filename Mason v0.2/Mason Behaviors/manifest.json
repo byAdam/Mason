@@ -2,7 +2,7 @@
     "format_version": 1,
     "header": {
         "description": "Mason Behaviors",
-        "name": "Mason Behaviors for v0.1",
+        "name": "Mason Behaviors for v0.2",
         "uuid": "43c1f5a6-fad6-4327-9592-daea2a0f70c6",
         "version": [0, 0, 1],
         "min_engine_version": [1, 2, 6]

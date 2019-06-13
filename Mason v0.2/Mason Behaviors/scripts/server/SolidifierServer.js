@@ -55,13 +55,14 @@ system.xpCalculate = function(playerName,xpLevel)
 
 	if(xpLevel<40)
 	{
-		this.runCommand("give "+playerName+" xpear "+xpearCount)
+		this.runCommand("give "+playerName+" mason:xpear "+xpearCount)
+		this.runCommand("execute "+playerName+" ~ ~ ~ playsound bucket.fill_lava @s ~ ~ ~ 1 3.5")
 	}
 	else
 	{
-		this.runCommand("give @a[name="+playerName+",lm=39] xpear "+xpearCount)
+		this.runCommand("give @a[name="+playerName+",lm=39] mason:xpear "+xpearCount)
+		this.runCommand("execute @a[name="+playerName+",lm=39] ~ ~ ~ playsound bucket.fill_lava @s ~ ~ ~ 1 3.5")
 	}
-	
 }
 
 system.xpCallback = function(event,playerName,lMin,lMax)
@@ -101,7 +102,7 @@ system.itemUse = function(event)
 {
 	playerName = event.data.playerName
 
-	this.runCommand("/replaceitem entity "+playerName+" slot.weapon.mainhand 0 solidifier")
+	this.runCommand("/replaceitem entity "+playerName+" slot.weapon.mainhand 0 mason:solidifier")
 	this.xpBetween(playerName,1,40)
 	
 }

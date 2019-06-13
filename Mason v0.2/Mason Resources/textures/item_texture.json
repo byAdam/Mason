@@ -53,6 +53,14 @@
     "enemy_scanner":
     {
       "textures":"textures/items/enemy_scanner.png"
+    },
+    "boomerang":
+    {
+      "textures":"textures/items/boomerang.png"
+    },
+    "ball":
+    {
+      "textures":"textures/items/ball.png"
     }
   }
 }
