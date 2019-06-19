@@ -5,7 +5,7 @@
       "name" : "Mason Resources for v0.2",
       "platform_locked" : false,
       "uuid" : "77a33e84-4979-4c74-9a59-efd5f09f20cc",
-      "version" : [ 0, 0, 1 ]
+      "version" : [ 0, 0, 2 ]
    },
    "min_engine_version" : [ 0, 0, 1, 1, 2, 5 ],
    "modules" : [
@@ -13,10 +13,7 @@
          "description" : "Client Behavior Module",
          "type" : "resources",
          "uuid" : "92974f62-34ca-4db9-b6c0-c89922c72812",
-         "version" : [ 0, 0, 1 ]
+         "version" : [ 0, 0, 2]
       }
-   ],
-   "capabilities": [
-      "experimental_custom_ui"
    ]
 }

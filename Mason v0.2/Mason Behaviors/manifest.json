@@ -4,13 +4,13 @@
         "description": "Mason Behaviors",
         "name": "Mason Behaviors for v0.2",
         "uuid": "43c1f5a6-fad6-4327-9592-daea2a0f70c6",
-        "version": [0, 0, 1],
+        "version": [0, 0, 2],
         "min_engine_version": [1, 2, 6]
     },
     "modules": [{
         "description": "Mason Behaviors",
         "type": "client_data",
         "uuid": "9200c090-a2b7-45d8-b12a-ef0720ff203e",
-        "version": [0, 0, 1]
+        "version": [0, 0, 2]
     }]
 }

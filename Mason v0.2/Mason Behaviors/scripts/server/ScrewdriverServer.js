@@ -126,7 +126,9 @@ system.screwdriverFill = function(player,playerName,tickingArea,block,dataValue,
 
 		//Clear
 		// Change from -1 once item api has improved
+		this.runCommand("give "+playerName+" "+block)
 		this.runCommand("clear "+playerName+" "+block+" -1 "+areaCount)
+		this.runCommand("clear "+playerName+" "+block+" 0 1")
 	}
 	else
 	{
