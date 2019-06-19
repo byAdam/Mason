@@ -1,0 +1,28 @@
+item.mason:screwdriver.name=Screwdriver
+item.mason:wrench.name=Wrench
+item.mason:hammer.name=Hammer
+item.mason:chainsaw.name=Chainsaw
+item.mason:diaron_ingot.name=Diaron Ingot
+item.mason:magnet.name=Magnet
+item.mason:plough.name=Pitchfork
+item.mason:displacer.name=Displacer
+item.mason:phaser.name=Phaser
+item.mason:cloud_item.name=Cloud
+item.mason:solidifier.name=Solidifier
+item.mason:xpear.name=Xpear
+item.mason:enemy_scanner.name=Enemy Scanner
+item.mason:boomerang.name=Boomerang
+item.mason:ball.name=Ball
+
+tile.mason:cloud.name=Cloud
+tile.mason:conveyor_belt.name=Conveyor Belt
+tile.mason:conveyor_belt_north.name=Conveyor Belt
+tile.mason:conveyor_belt_south.name=Conveyor Belt
+tile.mason:conveyor_belt_east.name=Conveyor Belt
+tile.mason:conveyor_belt_west.name=Conveyor Belt
+tile.mason:butcher.name=Butcher
+tile.mason:elevator.name=Elevator
+
+entity.mason:boomerang.name=Boomerang
+entity.mason:boomerang_damage.name=Boomerang
+entity.mason:butcher_damage.name=Butcher
