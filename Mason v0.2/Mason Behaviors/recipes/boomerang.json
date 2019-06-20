@@ -8,8 +8,8 @@
     
     "tags": [ "crafting_table" ],
     "pattern": [
-      " X",
-      "X X",
+      " X ",
+      "X X"
     ],
     "key": {
       "X": {
