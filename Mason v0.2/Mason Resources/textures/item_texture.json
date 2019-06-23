@@ -17,6 +17,10 @@
     "chainsaw":
     {
       "textures":"textures/items/chainsaw.png"
+    },    
+    "breaker":
+    {
+      "textures":"textures/items/breaker.png"
     },
     "diaron_ingot":
     {

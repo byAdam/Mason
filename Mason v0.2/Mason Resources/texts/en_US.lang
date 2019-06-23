@@ -13,6 +13,7 @@ item.mason:xpear.name=Xpear
 item.mason:enemy_scanner.name=Enemy Scanner
 item.mason:boomerang.name=Boomerang
 item.mason:ball.name=Ball
+item.mason:breaker.name=Breaker
 
 tile.mason:cloud.name=Cloud
 tile.mason:conveyor_belt.name=Conveyor Belt

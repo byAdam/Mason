@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "mason:breaker",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "breaker",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}
